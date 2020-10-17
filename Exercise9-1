@@ -1,0 +1,13 @@
+# Exercise 9-1
+# Created using Jupyter Notebook, modifed to improve appearance of output
+
+#!/usr/bin/env python
+# coding: utf-8
+
+print("Show all entries in words.txt which contain more than 20 letters:")
+
+fin = open('words.txt')
+for line in fin:
+    word = line.strip()
+    if len(word) > 20:
+        print(word)
